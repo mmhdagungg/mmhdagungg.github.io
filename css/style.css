@@ -284,10 +284,13 @@ footer {
 
 /* Media Queries */
 
-/* Laptop */
 @media (max-width: 1366px) {
-  html {
-    font-size: 75%;
+  .about-us .about-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 }
 

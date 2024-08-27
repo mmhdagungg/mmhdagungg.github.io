@@ -137,6 +137,7 @@ header {
   text-wrap: balance;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   /* position: relative; */
 }
 
@@ -152,7 +153,7 @@ header {
 }
 
 .container-hero img {
-  max-width: 600px;
+  width: 30rem;
 }
 
 /* Service Section */
@@ -256,11 +257,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .footer-section,
   .footer-logo {
     margin: 10px 10px; /* Margin atas dan bawah setiap bagian footer pada perangkat kecil */
@@ -354,8 +350,14 @@ footer {
   .navbar .navbar-nav a {
     font-size: 1.8rem;
   }
-
-  .hero .content-hero h1 {
-    font-size: 3rem;
+  .container-hero {
+    flex-direction: column;
+    padding: 40px 25px 40px;
+  }
+  .container-hero .text-section {
+    order: 2;
+  }
+  .container-hero .image-section {
+    order: 1;
   }
 }
