@@ -130,11 +130,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #155354;
+  /* background-color: #155354; */
+  background-image: url(../img/bg-hero-aboutUs.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content-hero {
-  padding: 50px 180px;
+  padding: 50px 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,10 +153,6 @@ body {
   flex-direction: column;
 }
 
-.content-hero .right-content {
-  flex: 2;
-}
-
 .hero .left-content h1 {
   color: #d9d9d9;
   font-size: 4.5rem;
@@ -164,6 +164,9 @@ body {
   color: #d9d9d9;
   font-size: 41px;
   font-weight: 400;
+}
+.content-hero .right-content {
+  flex: 2;
 }
 
 .hero .right-content img {
@@ -299,61 +302,56 @@ section.flow1 {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+}
 
-  .recruitment {
-    background-color: #187172;
-    padding: 12px 40px;
-    color: #fff;
+.flow1 .recruitment {
+  background-color: #187172;
+  padding: 12px 40px;
+  color: #fff;
+}
+.recruitment .rec {
+  border-bottom: 3px solid white;
+}
 
-    .rec {
-      border-bottom: 3px solid white;
-    }
+.recruitment h1 {
+  font-size: 28 px;
+}
+.recruitment p {
+  padding-top: 13px;
+  font-size: 25px;
+}
 
-    h1 {
-      font-size: 28 px;
-    }
-    p {
-      padding-top: 13px;
-      font-size: 25px;
-    }
-  }
-
-  .pemagangan {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    /* align-items: center; */
-
-    .text {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      /* align-items: center; */
-      text-align: center;
-      text-wrap: balance;
-
-      h1 {
-        font-size: 28px;
-      }
-    }
-    img {
-      flex: 1;
-    }
-  }
+.pemagangan {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  /* align-items: center; */
+}
+.pemagangan .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  text-wrap: balance;
+}
+.pemagangan img {
+  flex: 1;
 }
 
 /* Section Flow 2 */
 
 section.flow2 {
-  min-height: 100vh;
+  min-height: fit-content;
   padding: 4rem;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 section .proses-rec {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   .text h1 {
     font-size: 32px;
@@ -548,5 +546,95 @@ footer {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .content-hero {
+    height: 100vh;
+    padding: 270px 20px 120px;
+  }
+
+  .hero .left-content h1 {
+    font-size: 40px;
+    align-self: center;
+  }
+
+  .hero .left-content p {
+    font-size: 30px;
+  }
+
+  .hero .right-content img {
+    display: none;
+  }
+  .certificate .sertifikat img {
+    max-width: 200px;
+  }
+  .certificate .sertifikat {
+    padding: 15px 25px;
+  }
+  section.flow1 {
+    gap: 20px;
+  }
+  .recruitment {
+    width: fit-content;
+  }
+  .recruitment h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .recruitment p {
+    font-size: 20px;
+  }
+  .pemagangan {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pemagangan .text {
+    width: fit-content;
+  }
+  /* section 2 */
+  section.flow2 {
+    width: fit-content;
+    min-height: fit-content;
+  }
+  section.flow2 img {
+    width: 320px;
+  }
+  section .proses-rec {
+    flex-direction: column;
+
+    .text h1 {
+      font-size: 28px;
+    }
+    .text h2 {
+      font-size: 26px;
+    }
+
+    .text ol li {
+      font-size: 22px;
+    }
+  }
+  section.flow2 .text {
+    padding: 4rem 3rem;
+  }
+
+  section .proses-gaji {
+    .text h1 {
+      font-size: 32px;
+    }
+    .text h2 {
+      font-size: 28px;
+    }
+
+    .text p {
+      font-size: 24px;
+    }
+  }
+  .proses-gaji {
+    flex-direction: column;
+  }
+  section.daftar-mitra {
+    img {
+      width: 350px;
+    }
   }
 }
