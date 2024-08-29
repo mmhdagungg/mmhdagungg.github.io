@@ -125,12 +125,11 @@ body {
 }
 
 /* Hero Section */
-.hero {
+section.hero {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background-color: #155354; */
   background-image: url(../img/bg-hero-aboutUs.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -138,7 +137,7 @@ body {
 }
 
 .content-hero {
-  padding: 50px 120px;
+  padding: 200px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +145,7 @@ body {
 }
 
 .content-hero .left-content {
-  flex: 2;
+  /* flex: 2; */
   text-wrap: balance;
   display: flex;
   gap: 20px;
@@ -166,11 +165,11 @@ body {
   font-weight: 400;
 }
 .content-hero .right-content {
-  flex: 2;
+  /* flex: 2; */
 }
 
 .hero .right-content img {
-  max-width: 900px;
+  max-width: 500px;
   border-radius: 50px;
 }
 
@@ -388,7 +387,7 @@ section .proses-gaji {
 /* Daftar Mitra */
 
 section.daftar-mitra {
-  height: 600px;
+  height: fit-content;
 }
 
 section.daftar-mitra {
@@ -465,6 +464,12 @@ footer {
   }
 }
 
+@media (max-width: 1400px) {
+  .content-hero {
+    flex-direction: column;
+  }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   html {
@@ -507,38 +512,38 @@ footer {
 
   .content-hero {
     flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
+    gap: 50px;
   }
 
   .hero .left-content h1 {
-    font-size: 2.5rem;
+    font-size: 50px;
+    text-align: center;
   }
 
   .hero .left-content p {
-    font-size: 1.2rem;
+    font-size: 30px;
   }
 
   .hero .right-content img {
-    max-width: 100%;
+    width: 600px;
   }
-
-  .about .row {
+  .pemagangan {
+    flex-direction: column;
+    gap: 10px;
+  }
+  section.flow2 .proses-rec {
     flex-direction: column;
   }
-
-  .about .row .about-img,
-  .about .row .content {
-    max-width: 100%;
+  section.flow2 .proses-gaji {
+    flex-direction: column;
   }
-
-  .about .row .about-img img {
-    height: auto;
+  section.daftar-mitra .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  .about .row .content h3 {
-    margin-top: 1rem;
-    font-size: 1.6rem;
+  section.daftar-mitra img {
+    width: 70%;
   }
 }
 
