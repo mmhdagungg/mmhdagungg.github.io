@@ -27,8 +27,8 @@ body {
 }
 
 /* .wrapper {
-    flex: 1;
-  } */
+      flex: 1;
+    } */
 
 header {
   display: flex;
@@ -131,12 +131,12 @@ header {
 /* Loker Section */
 
 .container-loker {
-  min-height: fit-content;
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   row-gap: 70px;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   padding: 15rem 4rem;
 }
 

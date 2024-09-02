@@ -137,6 +137,10 @@ header {
   justify-content: center;
   background-color: black;
   gap: 40px;
+  background: url(../img/bg-gallery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .img-gallery img {
   width: 500px;
